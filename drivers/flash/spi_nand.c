@@ -148,7 +148,7 @@ static int spi_nand_access(const struct device *const dev, uint8_t opcode, unsig
 {
 	bool is_addressed = (access & NAND_ACCESS_ADDRESSED) != 0U;
 	bool is_write = (access & NAND_ACCESS_WRITE) != 0U;
-	uint8_t buf[5] = {0};
+	uint8_t buf[6] = {0};
 	uint8_t address_len;
 	size_t tx_len = 1;
 
